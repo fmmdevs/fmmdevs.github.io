@@ -1,0 +1,71 @@
+.bienvenida {
+    background: url("img/bienvenida.jpeg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    /* Color texto bienvenida */
+    color: blanchedalmond;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 30px;
+}
+
+/* Div sin contenido, del mismo tamaño que #logo para centrar los links de la barra de navegación */
+/* Oculto para movil y tablets */
+#espacio {
+    display: none;
+}
+
+
+/* Titulos de las secciones */
+h2 {
+    border: solid 2px black;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/* Titulos de los artículos*/
+h4 {
+    border-bottom: solid 1px black;
+    margin-top: 5%;
+}
+
+
+
+
+/* The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+ */
+
+
+/* .col-sm- (small devices - screen width equal to or greater than 576px) */
+@media screen and (min-width:576px) {}
+
+
+/* .col-md- (medium devices - screen width equal to or greater than 768px) */
+@media screen and (min-width:768px) {
+
+
+    #espacio {
+        display: block;
+        width: 60px;
+    }
+}
+
+
+/* .col-lg- (large devices - screen width equal to or greater than 992px) */
+@media screen and (min-width:992px) {}
+
+
+/* .col-xl- (xlarge devices - screen width equal to or greater than 1200px)  */
+@media screen and (min-width:1200px) {}

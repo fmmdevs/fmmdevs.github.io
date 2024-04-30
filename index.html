@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&Aacute;frica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f3c836c800.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Container fluid para la imagen de bienvenida ocupe todo el ancho -->
+    <div class="container-fluid">
+        <div class="bienvenida row">
+            <div class="col-12 text-center mt-1">
+                <h1>¡Bienvenido!</h1>
+                <h5>Tu portal favorito de informaci&oacute;n sobre &Aacute;frica</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Después de hacer varias pruebas, he decidido dejar fuera de los container el elemento nav. 
+             Así consigo que la barra se extienda a todo el ancho de la pantalla y no deje margenes.
+            Además al tener varios container solo se va a mover hasta el final del container al que pertenezca.
+            No he necesitado ni col-12 ni w-100. -->
+    <!-- Barra de navegación con tres enlaces y un logo -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- Brand -->
+
+
+        <a class="navbar-brand" href="#"><img id="logo" src="img/logo/polygonal-1302191.svg" /></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- Con mx-auto consigo centrar los elementos -->
+            <ul class="navbar-nav mx-auto ">
+
+                <!-- Para que los elementos del dropdown queden alineados uso mx-auto-->
+                <!-- text-center lo utilizo para "Safaris" -->
+                <!-- Cuando cambio el orden de las secciones tambien cambio el orden de los elementos
+                     de la barra de navegación -->
+                <li class="nav-item dropdown order-sm-1 order-md-1 order-lg-4">
+
+                    <a class="nav-link dropdown-toggle text-center" href="#" data-toggle="dropdown"
+                        aria-expanded="false">Viajes</a>
+                    <div class="dropdown-menu text-center">
+                        <a class="dropdown-item" href="#travel-vlog">Travel
+                            Vlog</a>
+                        <a class="dropdown-item" href="#viaje-1">Desierto del Sahara, Marruecos</a>
+                        <a class="dropdown-item" href="#viaje-2">Cataratas Victoria, Zambia/Zimbabue</a>
+                        <a class="dropdown-item" href="#viaje-3">Ciudad del Cabo, Sudáfrica</a>
+                        <a class="dropdown-item" href="#viaje-4">Parque Nacional de Simien, Etiopía</a>
+                        <a class="dropdown-item" href="#viaje-5">Isla Mauricio, Mauricio</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown order-sm-4 order-md-4 order-lg-1">
+
+                    <a class="nav-link dropdown-toggle text-center" href="#" data-toggle="dropdown"
+                        aria-expanded="false">Animales</a>
+                    <div class="dropdown-menu text-center">
+                        <a class="dropdown-item" href="#animal-1">León</a>
+                        <a class="dropdown-item" href="#animal-2">Elefante</a>
+                        <a class="dropdown-item" href="#animal-3">Jirafa</a>
+                        <a class="dropdown-item" href="#animal-4">Rinoceronte Negro</a>
+                        <a class="dropdown-item" href="#animal-5">Hipopótamo</a>
+                        <a class="dropdown-item" href="#animal-donde">Dónde encontrarlos</a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item dropdown order-sm-3 order-md-2 order-lg-3">
+
+                    <a class="nav-link dropdown-toggle text-center" href="#" data-toggle="dropdown"
+                        aria-expanded="false">Tribus</a>
+                    <div class="dropdown-menu text-center">
+                        <a class="dropdown-item" href="#tribu-1">Los Masáis</a>
+                        <a class="dropdown-item" href="#tribu-2">Los Himba</a>
+                        <a class="dropdown-item" href="#tribu-3">Los Hadza</a>
+                        <a class="dropdown-item" href="#tribu-4">Los Tuareg</a>
+                        <a class="dropdown-item" href="#tribu-5">Los Samburu</a>
+                        <a class="dropdown-item" href="#tribu-poblacionales">Datos poblacionales</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown order-sm-2 order-md-3 order-lg-2">
+
+                    <a class="nav-link dropdown-toggle text-center" href="#" data-toggle="dropdown"
+                        aria-expanded="false">Safaris</a>
+                    <div class="dropdown-menu text-center">
+                        <a class="dropdown-item" href="#safari-1">Reserva Nacional de Masái Mara</a>
+                        <a class="dropdown-item" href="#safari-2">Parque Nacional Kruger</a>
+                        <a class="dropdown-item" href="#safari-3">Parque Nacional Serengueti</a>
+                        <a class="dropdown-item" href="#safari-4">Delta del Okavango</a>
+                        <a class="dropdown-item" href="#safari-5">Parque Nacional Queen Elizabeth</a>
+                    </div>
+                </li>
+
+
+
+                <li class="nav-item order-sm-5 order-md-5 order-lg-5">
+
+                    <a class="nav-link text-center" href="#contacto" aria-expanded="false">Contacto
+                    </a>
+
+                </li>
+
+
+
+
+
+
+            </ul>
+
+        </div>
+        <div id="espacio"></div>
+    </nav>
+
+
+
+
+    <!-- El resto de contenido en un container, que deja margenes a los lados a partir de de 576 px. -->
+    <div class="container">
+
+        <!-- En esta fila anido todos los elementos section para poder cambiar el orden de cada sección-->
+        <div class="row">
+
+            <!-- Ahora aplico la clase col-12 y la ordenación pertinente -->
+            <section id="viajes" class="col-12 order-sm-1 order-md-1 order-lg-4">
+
+
+
+                <div class="row">
+                    <h2 class="col-12 text-center">Viajes</h2>
+                    <p class="col-12">África, un continente repleto de paisajes asombrosos, vida salvaje majestuosa y
+                        culturas
+                        fascinantes, ofrece
+                        experiencias de viaje únicas y emocionantes. Desde las maravillas naturales hasta las ciudades
+                        vibrantes, aquí tienes
+                        cinco viajes inolvidables para explorar la riqueza y diversidad de África.
+
+                    </p>
+                    <div id="travel-vlog" class="col-12 text-center">
+
+                        <h4>Travel Vlog</h4>
+
+                        <br>
+                    </div>
+
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4y3lLrqlTQ"></iframe>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p>
+                            Que este <strong>viaje visual</strong> sea una fuente de inspiración para futuras aventuras
+                            y un
+                            tributo a la
+                            increíble diversidad que
+                            define a este magnífico continente.</p>
+
+                    </div>
+                </div>
+
+
+
+
+                <article id="viaje-1" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Aventura en el Desierto del Sahara, Marruecos</h4>
+                    </div>
+
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/viajes/sahara.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Embárcate en una travesía por las dunas doradas del Desierto del Sahara en Marruecos.
+                            Experimenta
+                            la
+                            autenticidad de la
+                            cultura bereber, realiza paseos en camello al atardecer y pasa la noche bajo un cielo
+                            estrellado
+                            en
+                            un campamento
+                            nómada.
+
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="viaje-2" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Exploración de las Cataratas Victoria, Zambia/Zimbabue:</h4>
+                    </div>
+
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/viajes/cataratas-victoria.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Disfruta de la majestuosidad de las Cataratas Victoria, una maravilla natural compartida por
+                            Zambia y
+                            Zimbabue.
+                            Experimenta la potencia de las cataratas, realiza emocionantes actividades como el rafting
+                            en el
+                            río
+                            Zambeze y sumérgete
+                            en la belleza de los parques nacionales circundantes.
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="viaje-3" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Descubrimiento de la Ciudad del Cabo, Sudáfrica:
+
+                        </h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/viajes/ciudad-del-cabo.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Explora la vibrante Ciudad del Cabo, ubicada en la punta de África. Con su icónico Table
+                            Mountain
+                            de
+                            fondo, disfruta de
+                            la arquitectura colorida, la animada escena cultural y las impresionantes playas de la
+                            Ciudad
+                            del
+                            Cabo.
+
+                        </p>
+                    </div>
+                </article>
+                <article id="viaje-4" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Aventura en el Parque Nacional de Simien, Etiopía:
+
+                        </h4>
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/viajes/simein-etiopia.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Adéntrate en el paisaje montañoso del Parque Nacional de Simien en Etiopía. Hogar de picos
+                            impresionantes y ricos en
+                            biodiversidad, este parque es ideal para caminatas, avistamiento de aves y encuentros
+                            cercanos
+                            con
+                            la vida salvaje única
+                            de Etiopía.
+
+                        </p>
+                    </div>
+                </article>
+
+                <article id="viaje-5" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Exploración de la Isla Mauricio, Mauricio:
+                        </h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/viajes/isla-mauricio.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Descubre la isla tropical de Mauricio, un paraíso en el Océano Índico. Con playas de arena
+                            blanca,
+                            aguas cristalinas y
+                            una fusión única de culturas, Mauricio ofrece una escapada idílica y relajante.
+
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="animales" class="order-sm-4 order-md-4 order-lg-1">
+
+                <div class="row">
+                    <h2 class="col-12 text-center">Animales</h2>
+                    <p class="col-12">Estos Cinco Grandes animales encarnan la esencia misma de la vida salvaje africana
+                        y
+                        la necesidad imperante de
+                        conservarla. Cada uno, a su manera única, contribuye a la intrincada red de la naturaleza,
+                        recordándonos la importancia
+                        de preservar estos tesoros para las generaciones futuras. Explorar la majestuosidad de estos
+                        animales en su entorno
+                        natural es una experiencia que deja una impresión duradera y un profundo respeto por la vida
+                        salvaje
+                        africana.
+                    </p>
+                </div>
+
+
+
+
+                <article id="animal-1" class="row">
+                    <div class="col-12 text-center">
+                        <h4>León - El Rey de la Selva</h4>
+                    </div>
+                    <!-- Para centrar las imagenes he usado la clase y las descripciones he usado las clases del layout flex 
+                    incluidas en bootstrap. d-sm-flex justify-content-sm-center y align-items-sm-center -->
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/animales/leon.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>El majestuoso león, símbolo de fuerza y valentía, domina las sabanas africanas. Con sus
+                            melódicos
+                            rugidos, los leones
+                            establecen su territorio en lugares como la Reserva Nacional de Masái Mara en Kenia. Estos
+                            felinos carnívoros desempeñan
+                            un papel crucial en la regulación de las poblaciones de presas y son reverenciados en la
+                            cultura
+                            africana por su estatus
+                            como reyes de la selva.</p>
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="animal-2" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Elefante - Gigantes Gentiles</h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/animales/elefante.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-md-flex justify-content-md-center align-items-md-center">
+                        <p>Los elefantes, con su imponente tamaño y trompas distintivas, deambulan por las selvas y
+                            sabanas
+                            africanas, como en el
+                            Parque Nacional Chobe en Botsuana. Como herbívoros, desempeñan un papel vital en la
+                            dispersión
+                            de semillas y la creación
+                            de hábitats. A pesar de su robustez, enfrentan amenazas significativas, y su conservación es
+                            fundamental para mantener
+                            el equilibrio ecológico.</p>
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="animal-3" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Jirafa - Elegancia en las Alturas</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/animales/jirafa.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>La jirafa, con su distintivo cuello largo y manchas, es la reina de las alturas en la sabana
+                            africana, siendo el Parque
+                            Nacional de Serengueti en Tanzania uno de sus hogares. Estos herbívoros gráciles contribuyen
+                            a
+                            la biodiversidad al
+                            alcanzar las hojas más altas de los árboles. A pesar de su elegancia, también enfrentan
+                            desafíos
+                            de conservación.</p>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article id="animal-4" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Rinoceronte Negro - Guardianes en Peligro</h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/animales/rinoceronte-negro.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>El rinoceronte negro, majestuoso herbívoro con cuernos distintivos, se encuentra en las
+                            selvas y
+                            sabanas, como en el
+                            Parque Nacional Kruger en Sudáfrica. Lamentablemente, enfrenta una amenaza crítica debido a
+                            la
+                            caza furtiva. Su
+                            conservación es esencial para preservar la diversidad biológica y cultural de África.</p>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article id="animal-5" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Hipopótamo - Maestros de los Ríos y Lagos</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/animales/hipopotamo.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Los hipopótamos, gigantes semiacuáticos, dominan los ríos y lagos africanos, como el Río
+                            Zambeze
+                            en Zambia. A pesar de
+                            su aspecto apacible, son territoriales y pueden ser agresivos. Su presencia es crucial para
+                            mantener la salud de los
+                            ecosistemas acuáticos y son fascinantes observadores en los safaris acuáticos.
+                        </p>
+                        </p>
+                    </div>
+
+                </article>
+
+                <article id="animal-donde" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Dónde encontrarlos</h4>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Animal</th>
+                                <th scope="col">Hábitat</th>
+                                <th scope="col">Dónde verlo</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>León</td>
+                                <td>Sabana africana</td>
+                                <td>Reserva Nacional de Masái Mara, Kenia</td>
+
+                            </tr>
+                            <tr>
+                                <td>Elefante</td>
+                                <td>Selvas y sabanas</td>
+                                <td>Parque Nacional Chobe, Botsuana</td>
+
+                            </tr>
+                            <tr>
+                                <td>Jirafa</td>
+                                <td>Sabana africana</td>
+                                <td>Parque Nacional de Serengueti, Tanzania</td>
+
+                            </tr>
+                            <tr>
+                                <td>Rinoceronte negro</td>
+                                <td>Selvas y sabanas</td>
+                                <td>Parque Nacional Kruger, Sudáfrica</td>
+
+                            </tr>
+                            <tr>
+                                <td>Hipopótamo</td>
+                                <td>Ríos y lagos</td>
+                                <td>Río Zambeze, Zambia</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+
+
+
+            </section>
+
+            <section id="tribus" class="col-12 order-sm-3 order-md-2 order-lg-3">
+
+                <div class="row">
+
+                    <h2 class="col-12 text-center">Tribus</h2>
+                    <p class="col-12">Cada tribu africana es un testimonio vivo de la diversidad cultural y la
+                        resiliencia
+                        humana. A medida que exploramos
+                        estas comunidades, no solo obtenemos un vistazo a las tradiciones ancestrales, sino también una
+                        comprensión más profunda
+                        de la conexión intrínseca entre las personas y sus entornos únicos. Estas tribus son guardianes
+                        de
+                        un patrimonio valioso
+                        que merece ser celebrado y preservado para las generaciones futuras.
+                    </p>
+                </div>
+
+
+
+
+                <article id="tribu-1" class="row">
+
+                    <h4 class="col-md-12 text-center">Los Masáis - Guardianes de la Sabana</h4>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/tribus/masais.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>En las vastas llanuras de Kenia y Tanzania, los Masáis se destacan con su colorida
+                            vestimenta,
+                            elaboradas cuentas y
+                            altas lanzas. Como pastores nómadas, han mantenido sus prácticas culturales, incluida la
+                            construcción única de sus
+                            hogares conocidos como "manyattas". Los Masáis son conocidos por su valentía y su conexión
+                            especial con la vida
+                            silvestre africana.
+                        </p>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article id="tribu-2" class="row">
+                    <h4 class="col-md-12 text-center">Los Himba - Viviendo en Armonía con la Naturaleza</h4>
+                    <div class="col-12 col-sm-6 d-sm-flex order-lg-2 justify-content-sm-center align-items-sm-center">
+                        <img src="img/tribus/himba.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 d-sm-flex order-lg-1 justify-content-sm-center align-items-sm-center">
+                        <p>En las áridas tierras de Namibia, los Himba han desarrollado un estilo de vida semi-nómada
+                            adaptado al entorno
+                            desértico. Con sus llamativos peinados y cuerpos adornados con una mezcla de arcilla y
+                            grasa,
+                            los Himba demuestran su
+                            profunda conexión con la naturaleza y su capacidad para prosperar en condiciones
+                            desafiantes.
+                        </p>
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="tribu-3" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Los Hadza - Custodios de las Antiguas Prácticas</h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/tribus/hadza.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>En Tanzania, los Hadza preservan las antiguas prácticas de caza y recolección que han
+                            caracterizado su forma de vida
+                            durante milenios. Su lengua única, que incluye clics, es un testimonio de su herencia única.
+                            Los
+                            Hadza ofrecen un
+                            vistazo a una forma de vida que ha resistido el paso del tiempo.</p>
+                        </p>
+                    </div>
+                </article>
+
+
+                <article id="tribu-4" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Los Tuareg - Nómadas del Desierto</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex  justify-content-sm-center align-items-sm-center">
+                        <img src="img/tribus/tuareg.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>En las vastas extensiones desérticas del Sáhara, los Tuareg son nómadas conocidos por sus
+                            impresionantes tocados azules
+                            y su habilidad para navegar por el desierto. Mantienen una rica tradición de música, arte y
+                            poesía que refleja su
+                            conexión con la vastedad del desierto.
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="tribu-5" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Los Samburu - Coexistencia con la Vida Salvaje</h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/tribus/samburu.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>En el norte de Kenia, los Samburu han perfeccionado la coexistencia con la vida salvaje
+                            mientras
+                            practican el pastoreo.
+                            Con sus coloridas túnicas y collares, los Samburu son famosos por sus ceremonias de
+                            iniciación y
+                            sus habilidades para
+                            predecir eventos a través de la observación de aves y animales.
+                        </p>
+                        </p>
+                    </div>
+                </article>
+
+                <article id="tribu-poblacionales" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Datos poblacionales</h4>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover  text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tribu</th>
+                                <th scope="col">Región</th>
+                                <th scope="col">Población</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Masai</td>
+                                <td>Kenia y Tanzania</td>
+                                <td>Aproximadamente 1.5 millones</td>
+                            </tr>
+                            <tr>
+                                <td>Himba</td>
+                                <td>Namibia</td>
+                                <td>Alrededor de 50,000</td>
+                            </tr>
+                            <tr>
+                                <td>Hadza</td>
+                                <td>Tanzania</td>
+                                <td>Menos de 1,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tuareg</td>
+                                <td>Sahara y Sahel</td>
+                                <td>Varía, estimado en millones</td>
+                            </tr>
+                            <tr>
+                                <td>Samburu</td>
+                                <td>Kenia</td>
+                                <td>Aproximadamente 233,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </article>
+
+
+
+
+
+
+            </section>
+
+            <section id="safaris" class="col-12 order-sm-2 order-md-3 order-lg-2">
+
+
+                <div class="row">
+                    <h2 class="col-12 text-center">Safaris</h2>
+                    <p class="col-12">África, con sus vastas extensiones de sabanas, selvas y parques nacionales, ofrece
+                        algunos de los safaris más
+                        emocionantes e inolvidables del mundo. Desde la majestuosidad de los Cinco Grandes hasta las
+                        aves
+                        exóticas y los
+                        paisajes impresionantes, cada safari proporciona una experiencia única para los amantes de la
+                        naturaleza y la aventura.
+                    </p>
+                </div>
+
+
+
+
+                <article id="safari-1" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Reserva Nacional de Masái Mara, Kenia:</h4>
+                    </div>
+
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/safaris/safari-kenia.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Conocida por ser el escenario de la Gran Migración, la Reserva Nacional de Masái Mara en
+                            Kenia es
+                            un paraíso para los
+                            observadores de vida salvaje. Aquí, las llanuras se llenan de ñus y cebras durante la
+                            migración
+                            anual, ofreciendo un
+                            espectáculo impresionante. Además de los herbívoros, los depredadores como leones y
+                            leopardos
+                            también acechan en esta
+                            reserva.
+                        </p>
+                    </div>
+                </article>
+
+
+
+                <article id="safari-2" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Parque Nacional Kruger, Sudáfrica:</h4>
+                    </div>
+
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/safaris/safari-south-africa.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>Hogar de una increíble diversidad de especies, el Parque Nacional Kruger es uno de los
+                            destinos
+                            de safari más
+                            emblemáticos. Desde elefantes y rinocerontes hasta leones y leopardos, los visitantes tienen
+                            la
+                            oportunidad de
+                            presenciar la vida salvaje en su hábitat natural. Los safaris en Kruger ofrecen una
+                            experiencia
+                            completa, con opciones
+                            para safaris diurnos y nocturnos.</p>
+                    </div>
+                </article>
+
+
+
+                <article id="safari-3" class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h4>Parque Nacional Serengueti, Tanzania:
+                        </h4>
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/safaris/mount-kilimanjaro-tanzania.jpg" />
+                    </div>
+                    <div class="col-12 col-sm-6 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>El Parque Nacional Serengueti es sinónimo de vastas llanuras, grandes manadas de herbívoros y
+                            depredadores majestuosos.
+                            Es famoso por ser el escenario de la Gran Migración, donde millones de ñus y cebras cruzan
+                            la
+                            región en busca de
+                            pasturas frescas. Este parque también alberga una increíble diversidad de aves,
+                            convirtiéndolo
+                            en un paraíso para
+                            observadores de aves.
+                        </p>
+                    </div>
+                </article>
+
+                <article id="safari-4" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Delta del Okavango, Botsuana:
+
+                        </h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-2 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/safaris/okavango-botsuana.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>El Delta del Okavango es una maravilla única, donde los ríos que fluyen hacia el desierto
+                            crean
+                            un oasis de vida. Los
+                            safaris en canoa tradicional, conocidos como "mokoro", permiten a los visitantes explorar
+                            los
+                            canales serpenteantes y
+                            observar de cerca la vida acuática, incluidos hipopótamos y cocodrilos. Las islas del delta
+                            también son refugio para
+                            elefantes y leones.
+
+                        </p>
+                    </div>
+                </article>
+
+                <article id="safari-5" class="row">
+                    <div class="col-md-12 text-center">
+                        <h4>Parque Nacional Queen Elizabeth, Uganda:
+                        </h4>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-2 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <img src="img/safaris/queen-elizabeth-national-park-6107486_1280.jpg" />
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 order-md-1 order-lg-1 d-sm-flex justify-content-sm-center align-items-sm-center">
+                        <p>En la región de los Grandes Lagos de África, el Parque Nacional Queen Elizabeth combina una
+                            variedad de ecosistemas,
+                            desde sabanas hasta humedales. Es hogar de una población diversa de animales, incluidos
+                            elefantes, búfalos, leones y una
+                            sorprendente cantidad de hipopótamos. Los safaris en bote por el Canal Kazinga ofrecen una
+                            perspectiva única de la vida
+                            salvaje que se congrega en las orillas.
+
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section id="contacto" class="col-12 order-sm-5 order-md-5 order-lg-5">
+                <div class="row">
+                    <h2 class="col-12 text-center">Contacto</h2>
+
+                </div>
+                <form class="text-center">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="ciudad" class="form-control" id="ciudad">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="texto">¿Cuál es la razon por la que contacta con nosotros?</label>
+                        <textarea class="form-control" id="texto" rows="6"></textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                    
+                    <div class="form-check ">
+                        
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Suscribirme a la newsletter
+                        </label>
+                        
+                    </div>
+                </div> -->
+                    <button type="submit" class="btn btn-warning btn-lg btn-block">Enviar</button>
+                </form>
+            </section>
+        </div>
+
+        <footer class="row">
+            <p class="col-12 text-center mt-5">&copy;2024 Todos los derechos reservados</p>
+        </footer>
+
+    </div>
+
+
+    <!-- scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
